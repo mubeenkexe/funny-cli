@@ -1,0 +1,23 @@
+{
+    "name": "funny-cli",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "description": "",
+    "bin": {
+        "create-funny-express": "./index.js"
+    },
+    "dependencies": {
+        "chalk-animation": "^2.0.3",
+        "figlet": "^1.8.0",
+        "fs-extra": "^11.2.0",
+        "gradient-string": "^3.0.0",
+        "inquirer": "^12.3.0"
+    }
+}
