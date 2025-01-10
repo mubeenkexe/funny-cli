@@ -11,7 +11,7 @@
     "type": "module",
     "description": "",
     "bin": {
-        "create-funny-express": "./index.js"
+        "create-funny": "./index.js"
     },
     "dependencies": {
         "chalk-animation": "^2.0.3",
