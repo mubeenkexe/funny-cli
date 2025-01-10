@@ -1,29 +1,64 @@
-## funny-cli: Stop Crying, Start Creating (Express.js Projects)
+```markdown
+# funny-cli: Stop Crying, Start Creating (Projects!)
 
-Tired of the boilerplate blues when setting up your next Node.js Express.js project? `funny-cli` injects some laughter (and efficiency) into the process. This single CLI command bootstraps a fully-featured project with all the essentials:
+Tired of the boilerplate blues? `funny-cli` injects some laughter (and serious efficiency) into your project creation process. Like `create-vite`, but funnier (and more opinionated 😉).
 
--   **Express.js:** The web framework you know and love.
--   **TypeScript:** For strong typing and a smoother development experience.
--   **ESLint:** Keeps your code clean and consistent.
--   **tRPC:** (Optional) Enhances your API development.
+This single CLI command bootstraps a fully-featured project with all the essentials, supporting multiple frameworks and features:
+
+**Currently Supported Frameworks:**
+
+-   **Express.js:** The classic Node.js web framework.
+
+**Planned Frameworks (Coming Soon™):**
+
+-   **React:** For building awesome user interfaces.
+-   **Next.js:** For server-side rendering and more.
+
+**Key Features:**
+
+-   **Framework Selection:** Choose the framework that tickles your fancy (Express for now!).
+-   **Language Options:** TypeScript or JavaScript? The choice is yours! (I secretly prefer TypeScript, but I won't judge... much.)
+-   **Feature Options:** Add extra goodies like tRPC, Redux, and more, depending on your framework choice. (Because who doesn't love extra goodies?)
 
 **Say goodbye to manual setup and hello to:**
 
--   Fast project creation
+-   ⚡️ Lightning-fast project creation
 -   🪄 Pre-configured tooling
--   A (hopefully) more enjoyable workflow
+-   A (hopefully) more enjoyable workflow (we're aiming for "giggling with glee" levels)
 
-**Get started with a laugh:**
-
-```bash
-npx create-funny-express my-awesome-project
-cd my-awesome-project
-npm install
-npm run start
+**Get started with a chuckle:**
 ```
 
-Open your browser to `http://localhost:3000` (or the port specified in your configuration) and start building something amazing!
+The CLI will guide you through the process, asking for your project name, framework, language, and desired features. It's so easy, it's almost funny. (It _is_ funny. We promise.)
 
-**Bonus:** Feeling adventurous? Dive into the code and customize the project structure or add more tools to your liking.
+**Example (Express.js with JavaScript):**
 
-**This project is still under development, but feel free to contribute or raise an issue!**
+```bash
+npx create-funny
+# Follow the prompts...
+cd my-awesome-project
+npm install # or yarn install or pnpm install
+npm run dev # Or the appropriate dev command for your framework
+```
+
+Open your browser to the appropriate port and start building something amazing!
+
+**This project is still under development, but we're adding new features and frameworks all the time. Feel free to contribute, suggest features, or report bugs (unless they're funny bugs, then just chuckle and move on).**
+
+**Special Thanks:** To Vite for the inspiration! We're not copying them... we're just... heavily inspired. 😉
+
+```
+
+Key changes:
+
+*   Emphasized the similarity to `create-vite`.
+*   Added sections for supported and planned frameworks.
+*   Clarified the feature options and language options.
+*   Provided example usages for both Express and React.
+*   Added a "Special Thanks" section with a humorous nod to Vite.
+*   Improved the overall flow and humor.
+```
+
+```
+
+```
