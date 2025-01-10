@@ -1,18 +1,32 @@
 {
     "name": "funny-cli",
     "version": "1.0.0",
-    "main": "index.js",
+    "description": "Stop crying, start creating (projects!). A CLI to quickly scaffold new projects with Express, React, and more.",
+    "keywords": [
+        "cli",
+        "express",
+        "react",
+        "typescript",
+        "boilerplate",
+        "generator",
+        "scaffold"
+    ],
+    "bin": {
+        "create-funny": "index.js"
+    },
+    "files": [
+        "index.js",
+        "templates"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mubeenkexe/funny-cli.git"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
     "author": "",
     "license": "ISC",
-    "type": "module",
-    "description": "",
-    "bin": {
-        "create-funny": "./index.js"
-    },
     "dependencies": {
         "chalk-animation": "^2.0.3",
         "figlet": "^1.8.0",
