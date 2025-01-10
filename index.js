@@ -5,6 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { passion } from "gradient-string";
 import figlet from "figlet";
+import chalk from "chalk";
 
 async function main() {
     console.log(
@@ -25,23 +26,74 @@ async function main() {
             {
                 name: "projectName",
                 type: "input",
-                message: "Enter your funny project name:",
+                message: "Enter your funny project name: ",
             },
         ]);
 
-        projectName = response.projectName;
+        projectName = response.projectName.toLowerCase().replace(/ /g, "-");
     }
+
+    const { framework } = await inquirer.prompt([
+        {
+            name: "framework",
+            type: "list",
+            message: "Select a framework: ",
+            choices: ["Express"],
+        },
+    ]);
+
+    const { language } = await inquirer.prompt([
+        {
+            name: "language",
+            type: "list",
+            message: "Choose a language:",
+            choices: [
+                { name: chalk.yellow("JavaScript"), value: "JavaScript" },
+                { name: chalk.blue("TypeScript"), value: "TypeScript" },
+            ],
+        },
+    ]);
+
+    let features = [];
+    if (framework === "Express") {
+        features = await inquirer.prompt([
+            {
+                name: "features",
+                type: "checkbox",
+                message: "Select features for Express:",
+                choices: ["tRPC", "Base"],
+            },
+        ]);
+    } else if (framework === "React" || framework === "Next") {
+        features = await inquirer.prompt([
+            {
+                name: "features",
+                type: "checkbox",
+                message: `Select features for ${framework}:`,
+                choices: ["Redux", "Base"],
+            },
+        ]);
+    }
+
+    const selectedFeature = features.features[0] || "Base";
 
     const targetDir = path.resolve(process.cwd(), projectName);
 
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = path.dirname(__filename);
-    const templateDir = path.resolve(__dirname, "template");
+    const templateDir = path.resolve(
+        __dirname,
+        "templates",
+        framework.toLowerCase(),
+        language.toLowerCase(),
+        selectedFeature.toLowerCase()
+    );
 
     try {
-        console.log("Creating project...");
+        console.log("\nCreating project...\n");
         await fs.copy(templateDir, targetDir);
-        console.log("Project created successfully!");
+        console.log("\nProject created successfully!\n");
+        console.log(`\ncd ${projectName}\nnpm install\nnpm run dev\n`);
     } catch (err) {
         console.error("Error creating project:", err);
     }
