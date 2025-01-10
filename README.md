@@ -25,7 +25,7 @@ This single CLI command bootstraps a fully-featured project with all the essenti
 -   🪄 Pre-configured tooling
 -   A (hopefully) more enjoyable workflow (we're aiming for "giggling with glee" levels)
 
-**Get started with a chuckle:**
+## Get started with a chuckle:
 
 The CLI will guide you through the process, asking for your project name, framework, language, and desired features. It's so easy, it's almost funny. (It _is_ funny. We promise.)
 
@@ -45,14 +45,11 @@ Open your browser to the appropriate port and start building something amazing!
 
 **Special Thanks:** To Vite for the inspiration! We're not copying them... we're just... heavily inspired. 😉
 
-```
+## Key changes:
 
-Key changes:
-
-*   Emphasized the similarity to `create-vite`.
-*   Added sections for supported and planned frameworks.
-*   Clarified the feature options and language options.
-*   Provided example usages for both Express and React.
-*   Added a "Special Thanks" section with a humorous nod to Vite.
-*   Improved the overall flow and humor.
-```
+-   Emphasized the similarity to `create-vite`.
+-   Added sections for supported and planned frameworks.
+-   Clarified the feature options and language options.
+-   Provided example usages for both Express and React.
+-   Added a "Special Thanks" section with a humorous nod to Vite.
+-   Improved the overall flow and humor.
