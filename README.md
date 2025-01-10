@@ -1,4 +1,3 @@
-```markdown
 # funny-cli: Stop Crying, Start Creating (Projects!)
 
 Tired of the boilerplate blues? `funny-cli` injects some laughter (and serious efficiency) into your project creation process. Like `create-vite`, but funnier (and more opinionated 😉).
@@ -27,7 +26,6 @@ This single CLI command bootstraps a fully-featured project with all the essenti
 -   A (hopefully) more enjoyable workflow (we're aiming for "giggling with glee" levels)
 
 **Get started with a chuckle:**
-```
 
 The CLI will guide you through the process, asking for your project name, framework, language, and desired features. It's so easy, it's almost funny. (It _is_ funny. We promise.)
 
@@ -57,8 +55,4 @@ Key changes:
 *   Provided example usages for both Express and React.
 *   Added a "Special Thanks" section with a humorous nod to Vite.
 *   Improved the overall flow and humor.
-```
-
-```
-
 ```
